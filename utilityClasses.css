@@ -1,0 +1,79 @@
+.flex {
+  display: flex;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.justifyContentCenter {
+  justify-content: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bgBlack{
+    background-color: black;
+}
+
+.bgGrey{
+    background-color: #202020;
+}
+
+.roundRadius{
+    border-radius: 9px;
+}
+
+.marginOne{
+    margin: 15px;
+}
+
+.paddingOne{
+    padding: 10px;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+/* Styling for the scroll bar */
+::-webkit-scrollbar {
+  width: 10px;  /* Set the width of the scrollbar */
+  height: 10px; /* Set the height of the horizontal scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Dark background for the track */
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #444; /* Dark grey color for the thumb */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Lighter grey color when hovered */
+}
+
+/* Optional: Styling for the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background: #2c2c2c;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.vertical-range {
+  writing-mode: bt-lr; /* Sets the orientation */
+  -webkit-appearance: slider-vertical; /* For WebKit browsers */
+  width: 8px; /* Adjust as needed */
+  height: 70px; /* Adjust as needed */
+}

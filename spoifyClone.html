@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="spotifyClone.css" />
+    <link rel="stylesheet" href="utilityClasses.css" />
+  </head>
+  <body>
+    <!-- MAIN  -->
+    <div class="main flex bgBlack">
+      <!-- LEFT  -->
+      <div class="left">
+        <div class="top flex bgGrey roundRadius marginOne">
+          <div class="spotifyLogo flex">
+            <img src="img/logo.svg" alt="spotify" />
+            <img src="img/close.svg" alt="" class="close" />
+          </div>
+          <div class="home flex">
+            <img class="homeLogo" src="img/home.svg" alt="home" />
+            <div class="hover pointer">Home</div>
+          </div>
+          <div class="search flex">
+            <img class="searchLogo" src="img/search.svg" alt="search" />
+            <div class="hover pointer">Search</div>
+          </div>
+        </div>
+
+        <div class="bottom bgGrey roundRadius marginOne">
+          <div class="title flex">
+            <div class="playlist flex">
+              <svg
+                class="playlistLogo"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              <div class="text">Your Library</div>
+            </div>
+          </div>
+          <div class="songList">
+            No Playlist Selected
+          </div>
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT  -->
+      <div class="right">
+        <div class="header flex bgGrey">
+          <div class="nav flex">
+            <img class="hamburger" src="img/hamburger.svg" alt="" />
+            <svg
+              class="leftArrow pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              viewBox="0 0 24 24"
+              style="fill: grey"
+            >
+              <path
+                d="M15 4l-8 8 8 8"
+                stroke="white"
+                stroke-width="3"
+                fill="none"
+              />
+            </svg>
+            <svg
+              class="rightArrow pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              viewBox="0 0 24 24"
+              style="fill: grey"
+            >
+              <path
+                d="M9 4l8 8-8 8"
+                stroke="white"
+                stroke-width="3"
+                fill="none"
+              />
+            </svg>
+          </div>
+          <div class="button">
+            <button class="signup bgGrey pointer">Sign up</button>
+            <button class="login pointer">Log in</button>
+          </div>
+        </div>
+        <div class="playlists">
+          <h1>Spotify Playlists</h1>
+          <div class="container flex"></div>
+          <div class="footer-right">
+            <div class="playbar flex bgGrey">
+            <div class="songName">No Song Playing</div>
+            <img id="prev-button" src="img/prevsong.svg" alt="prev" />
+            <img id="play-button" src="img/play.svg" alt="play" />
+            <img id="next-button" src="img/nextsong.svg" alt="next" />
+            <div class="currentTime">00:00</div>
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="spotifyClone.js"></script>
+  </body>
+</html>
